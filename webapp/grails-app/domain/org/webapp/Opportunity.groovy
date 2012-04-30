@@ -2,11 +2,11 @@ package org.webapp
 
 class Opportunity {
 static hasMany = [Applications: Application]
-static mappedBy = [Applications: "Opportunity"]
+static mappedBy = [Applications: "opportunity"]
 
-String Jobtitle
-String Company
-String Status
+String jobtitle
+String company
+String status
 
     static constraints = {
     }
