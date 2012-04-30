@@ -31,8 +31,8 @@
 		<g:message code="application.status.label" default="Status" />
 		
 	</label>
-	<g:textField name="status" value="${applicationInstance?.status}"/>
-</div>
+
+<g:select id="placement" name="placement.status" from="${org.webapp.Status.list()}" optionKey="id" required="" value="${statusInstance?.Status?.id}" class="many-to-one"/>
 
 <div class="fieldcontain ${hasErrors(bean: applicationInstance, field: 'student', 'error')} required">
 	<label for="student">
