@@ -1,6 +1,7 @@
 package org.webapp
 
 import org.springframework.dao.DataIntegrityViolationException
+import grails.converters.XML
 
 class OpportunityController {
 
@@ -18,8 +19,8 @@ class OpportunityController {
 def listOpenPlacements() {
  def i = Opportunity.findAll("where.status = '%pen'")
 withFormat {
-//xml { render i as XML }
-//json { render i as JSON }
+xml { render i as XML }
+json { render i as JSON }
 }
        
     }
@@ -28,8 +29,8 @@ withFormat {
 def listApplicants() {
  def i = Opportunity.findAll(params.id)
 withFormat {
-//xml { render i as XML }
-//json { render i as JSON }
+xml { render i as XML }
+json { render i as JSON }
 }
        
     }
