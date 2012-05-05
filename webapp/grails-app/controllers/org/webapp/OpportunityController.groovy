@@ -20,8 +20,8 @@ class OpportunityController {
 def listOpenPlacements() {
  def i = Opportunity.findAll("where.status = '%pen'")
 withFormat {
-xml { render i as XML }
-json { render i as JSON }
+//xml { render i as XML }
+//json { render i as JSON }
 }
        
     }
@@ -31,8 +31,8 @@ def listApplicants() {
  def i = Opportunity.findAll(params.id)
 
 withFormat {
-xml { render i as XML }
-json { render i as JSON }
+//xml { render i as XML }
+//json { render i as JSON }
 }
        
     }
