@@ -16,13 +16,25 @@ class OpportunityController {
     }
 
 def listOpenPlacements() {
- def i = Opportunity.findAll("where.status = 'Open'")
+ def i = Opportunity.findAll("where.status = '%pen'")
 withFormat {
 //xml { render i as XML }
 //json { render i as JSON }
 }
        
     }
+//The above code is designed to find all opportunities with '%pen' as their status. This is to allow both open and Open to be found by this search. The variable called 'i' is then provided to the user in their choice of XML or JSON outputs. The output section is currently commented out due to an unidentified error.
+
+def listApplicants() {
+ def i = Opportunity.findAll(params.id)
+withFormat {
+//xml { render i as XML }
+//json { render i as JSON }
+}
+       
+    }
+//The above code is designed to find all applicants for a specific Opportunity, this is specified by the Opportunity number passed in the URL. The variable called 'i' is then provided to the user in their choice of XML or JSON outputs. The output section is currently commented out due to an unidentified error.
+
 
 
     def create() {

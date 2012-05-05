@@ -10216,3 +10216,106 @@ groovy.lang.MissingPropertyException: No such property: jobtitle for class: org.
 Possible solutions: jobtitle
 	at org.webapp.Opportunity$__clinit__closure1$$ENWYqFCy.doCall(Opportunity.groovy:16)
 	at java.lang.Thread.run(Thread.java:662)
+2012-05-05 18:27:50,391 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy: 42: Method definition not expected here. Please define the method at an appropriate place or perhaps try using a block/Closure instead. at line: 42 column: 17. File: /home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy @ line 42, column 17.
+       def save() {def listOpenPlacements() {
+                   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:858)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:548)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:524)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:501)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:480)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:909)
+	at org.codehaus.groovy.grails.compiler.Grailsc.compile(Grailsc.java:79)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:607)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1237)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at groovy.util.AntBuilder.performTask(AntBuilder.java:260)
+	at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:220)
+	at groovy.util.BuilderSupport.doInvokeMethod(BuilderSupport.java:147)
+	at groovy.util.AntBuilder.doInvokeMethod(AntBuilder.java:170)
+	at groovy.util.BuilderSupport.invokeMethod(BuilderSupport.java:64)
+	at org.codehaus.gant.GantBuilder.invokeMethod(GantBuilder.java:99)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:266)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler$compile$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:237)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectCompiler.compileAll(GrailsProjectCompiler.groovy:229)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.compileIfSource(GrailsProjectWatcher.java:240)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.access$300(GrailsProjectWatcher.java:46)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher$1.onChange(GrailsProjectWatcher.java:142)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.fireOnChange(DirectoryWatcher.java:162)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.run(DirectoryWatcher.java:144)
+	at org.codehaus.groovy.grails.compiler.GrailsProjectWatcher.run(GrailsProjectWatcher.java:163)
+2012-05-05 18:27:50,418 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy: 42: Method definition not expected here. Please define the method at an appropriate place or perhaps try using a block/Closure instead. at line: 42 column: 17. File: /home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy @ line 42, column 17.
+       def save() {def listOpenPlacements() {
+                   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:858)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:548)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:524)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:501)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:480)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:909)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:607)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-05-05 18:27:51,057 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy: 42: Method definition not expected here. Please define the method at an appropriate place or perhaps try using a block/Closure instead. at line: 42 column: 17. File: /home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy @ line 42, column 17.
+       def save() {def listOpenPlacements() {
+                   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:858)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:548)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:524)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:501)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:480)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:909)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:607)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+2012-05-05 18:27:51,058 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy: 42: Method definition not expected here. Please define the method at an appropriate place or perhaps try using a block/Closure instead. at line: 42 column: 17. File: /home/student/WebArc3/webapp/grails-app/controllers/org/webapp/OpportunityController.groovy @ line 42, column 17.
+       def save() {def listOpenPlacements() {
+                   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:858)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:548)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:524)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:501)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:480)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:60)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:216)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:909)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:607)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
