@@ -24,9 +24,11 @@
 				<thead>
 					<tr>
 					
+						<g:sortableColumn property="name" title="${message(code: 'student.name.label', default: 'Name')}" />
+
+<%/* I have changed the order in which columns display to place name first. */%>
 						<g:sortableColumn property="coursecode" title="${message(code: 'student.coursecode.label', default: 'Coursecode')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'student.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="notes" title="${message(code: 'student.notes.label', default: 'Notes')}" />
 					

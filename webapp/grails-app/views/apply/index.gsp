@@ -14,6 +14,7 @@
 				
 			</ul>
 		</div>
+<%/* The above code creates the page header, the menu bar and each of the buttons that would populate this toolbar. On this form there is only one button at the top as this controller only supports the default action and returning to the home page. */%>
 		<div id="create-application" class="content scaffold-create" role="main">
 			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">

@@ -12,8 +12,9 @@ class StudentController {
 
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [studentInstanceList: Student.list(params), studentInstanceTotal: Student.count()]
+        [studentInstanceList: Student.list(sort: 'name', order: 'desc'), studentInstanceTotal: Student.count()]
     }
+//above code was amended to sort students in descending order by name.
 
     def create() {
         [studentInstance: new Student(params)]
