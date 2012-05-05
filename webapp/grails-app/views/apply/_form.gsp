@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: applicationInstance, field: 'student_id', 'error')} ">
-	<label for="student_id">
+<div class="fieldcontain ${hasErrors(bean: applicationInstance, field: 'student', 'error')} ">
+	<label for="name">
 		<g:message code="application.name.label" default="Student Name" />
 		
 	</label>
-	<g:textField name="Student Name" value="${applicationInstance?.name}"/>
+<g:select optionKey="name" optionValue="name" name="name" from="${org.webapp.Student.list()}"/>
 </div>
 
 
@@ -16,6 +16,6 @@
 		<g:message code="application.placement.label" default="Placement name" />
 		
 	</label>
-	<g:textField name="placement" value="${applicationInstance?.placement}"/>
+	<g:select optionKey="id" optionValue="id" name="opportunity_id" from="${org.webapp.Opportunity.list()}"/>
 </div>
 

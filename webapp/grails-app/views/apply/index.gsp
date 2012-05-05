@@ -11,7 +11,7 @@
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				
 			</ul>
 		</div>
 		<div id="create-application" class="content scaffold-create" role="main">
@@ -26,12 +26,12 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form action="apply" >
+			<g:form action="processApplication" >
 				<fieldset class="form">
 					<g:render template="form"/>
 				</fieldset>
 				<fieldset class="buttons">
-					<g:submitButton name="apply" class="apply" value="${message(code: 'default.button.apply.label', default: 'Apply')}" />
+					<g:submitButton name="apply" class="save" value="${message(code: 'default.button.apply.label', default: 'Apply')}" />
 				</fieldset>
 			</g:form>
 		</div>

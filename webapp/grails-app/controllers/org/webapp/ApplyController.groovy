@@ -4,7 +4,6 @@ import org.springframework.dao.DataIntegrityViolationException
 
 class ApplyController {
  static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
-static defaultAction = "index"
 
     def index() {
    [applicationInstance: new Application(params)]
@@ -12,14 +11,11 @@ static defaultAction = "index"
  }
 
 def processApplication() {
-def s = Student.get(params.name)
-if (!s){
-flash.message = "This student does not exist."
-redirect(action:index)}
-def p = Opportunity.get(params.placement)
-if (!p){
-flash.message = "This placement does not exist."
-redirect(action:index)}
-def a = new Application(params.name, params.placement, status= "Applied")
+def application = new Application()
+application.name = Student.find("from Student as student where student.id = ${params.student}")
+application.placement = Opportunity.find("from Opportunity as opportunity where opportunity.id = ${params.placement}")
+application.status=Status.find ("from Status as status where status.code='Applied'")
+application.save()
+redirect(action:"index")
 }   
 }
