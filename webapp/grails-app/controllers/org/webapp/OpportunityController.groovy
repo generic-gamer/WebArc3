@@ -18,8 +18,8 @@ class OpportunityController {
 def listOpenPlacements() {
  def i = Opportunity.findAll("where.status = 'Open'")
 withFormat {
-xml { render i as XML }
-json { render i as JS }
+xml { render i as xml }
+json { render i as js }
 }
        
     }

@@ -18,7 +18,7 @@ into the command line and then begin running the site by typing
 
 run-app
 
-into the command line once Grails has started. This will allow you to open a browser and navigate to the provided URL and begin testing the site. If any problems are experienced at this stage it is helpful to check that the web server is configured to use this folder as the location for web pages.
+into the command line once Grails has started. This will allow you to open a browser and navigate to the provided URL and begin testing the site. If any problems are experienced at this stage it is helpful to check that the web server is configured to use this folder as the location for web pages. If you wish you can instead clone the repository to the public_html folder in the /home/*USER directory.
 
 If you wish to compile the site for deployment you must enter
 
