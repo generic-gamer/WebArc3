@@ -1,0 +1,27 @@
+Readme for Andrew Munro's Grails assignment.
+Readme updated on 04/05/2012.
+
+
+Checking out and building the project.
+
+This project can be checked out of Github by cloning the repository. In order to clone the repository you must navigate to an empty folder or create an empty folder(mkdir <FOLDERNAME>). Once you have navigated to the correct folder you have to clone the repository by entering the following command into the command line:
+
+ git clone git@github.com:generic-gamer/WebArc3.git
+
+This will clone the contents of the WebArc3 repository to the local folder.
+
+In order to build the project you will need Grails and all dependencies installed and will need to change directory to the root directory of the project (webapp). In order to test the app you need to start Grails by typing
+
+Grails
+
+into the command line and then begin running the site by typing
+
+run-app
+
+into the command line once Grails has started. This will allow you to open a browser and navigate to the provided URL and begin testing the site. If any problems are experienced at this stage it is helpful to check that the web server is configured to use this folder as the location for web pages.
+
+If you wish to compile the site for deployment you must enter
+
+war
+
+Into the Grails prompt, this command creates a web application archive which can be located on a server. Run-app should never be used for a completed application, run-app is purely for development purposes.
