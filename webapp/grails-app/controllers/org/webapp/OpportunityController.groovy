@@ -15,6 +15,16 @@ class OpportunityController {
         [opportunityInstanceList: Opportunity.list(params), opportunityInstanceTotal: Opportunity.count()]
     }
 
+def listOpenPlacements() {
+ def i = Opportunity.findAll("where.status = 'Open'")
+withFormat {
+xml { render i as XML }
+json { render i as JS }
+}
+       
+    }
+
+
     def create() {
         [opportunityInstance: new Opportunity(params)]
     }
